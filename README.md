@@ -2,7 +2,7 @@
 
 Stack Used: React, Python, Flask, ChakraUI, MongoDB
 
-Deployed Site: https://mizuumi-bot-frontend-1npd.vercel.app/signin
+Deployed Site: https://mizuumi-bot-frontend-jpvvkrmce-sajid2001.vercel.app/signin
 
 Backend Repo: https://github.com/Sajid2001/Mizuumi-bot-backend
 
