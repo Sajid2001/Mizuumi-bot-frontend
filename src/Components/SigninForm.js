@@ -68,7 +68,7 @@ import {
                 {error && <Text textAlign='center' textColor='red'>{error}</Text>}
                 <Stack pt={6}>
                   <Text align={'center'}>
-                    Don't have an account? <Link href='/signin' color={'blue.400'}>Sign Up</Link>
+                    Don't have an account? <Link href='/signup' color={'blue.400'}>Sign Up</Link>
                   </Text>
                 </Stack>
             </Stack>
