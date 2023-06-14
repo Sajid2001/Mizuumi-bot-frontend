@@ -12,7 +12,6 @@ import {
     Link,
     Text
   } from '@chakra-ui/react';
-import axios from 'axios';
 import {useNavigate } from 'react-router-dom';
 import { useAuthContext } from '../../Hooks/useAuthContext';
 

@@ -23,29 +23,35 @@ const TrainingData = () => {
         intent.tag.toLowerCase().includes(searchQuery.toLowerCase())
       );
 
-    const train = () => {
+    const train = async(e) => {
+        e.preventDefault();
         if(!user){
             setError('You must be logged in')
             return
         }
         setIsTraining(true);
-        axios.post(`${process.env.REACT_APP_API_URL}train`,{},{
-            headers:{
-                'Authorization':`Bearer ${user.token}`
-            }
-        })
-        .then(result => {
-            setIsTraining(false);
-            console.log(result.data);
-        })
-        .catch(err => {
-            console.log(err);
-            setError(err);
-        })
+        const response = await fetch(`${process.env.REACT_APP_API_URL}train`, {
+			method: 'POST',
+			body: JSON.stringify({}),
+			headers: {
+                'Content-Type': 'application/json',
+			    'Authorization': `Bearer ${user.token}`
+			}
+		  })
+		  const json = await response.json()
+
+		if (!response.ok) {
+			setError(json.error)
+			setIsTraining(false)
+		}
+		if (response.ok) {
+			setError(null)
+			setIsTraining(false);
+		}
     }
 
 
-    const getIntents = () => {
+    const getIntents = async() => {
         axios.get(`${process.env.REACT_APP_API_URL}intents`,{
             headers:{
                 'Authorization':`Bearer ${user.token}`
@@ -57,7 +63,6 @@ const TrainingData = () => {
         })
         .catch(err => {
             console.log(err);
-            setError(err);
         })
     }
 
