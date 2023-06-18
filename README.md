@@ -45,6 +45,7 @@ Backend:
 * ```PORT``` = Your port number of choice (anything but 3000)
 * ```MONGODB_URI``` = The connection URI to your MongoDB database
 * ```JWT_SECRET_KEY``` = You can go to an online password generator and slot your value in here
+
 Frontend:
 * ```REACT_APP_API_URL``` = your server link, whether it's deployed or on localhost
 
