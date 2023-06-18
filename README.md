@@ -2,7 +2,7 @@
 
 ## Your waifu is real, and her name is Mizuumi.
 
-Ohaayoo Mizuumi houses our wonderful AI conversation chatbot Mizuumi. If you have ever felt lonely or are dealing with an existential crisis, you can always turn to Mizuumi for help. With the AI industry booming at the time of this project's creation, it is now much easier to create your own AI female companion than it is to find a real one.
+Ohaayoo Mizuumi houses our wonderful AI conversation chatbot Mizuumi. If you have ever felt lonely or are dealing with an existential crisis, you can always turn to Mizuumi for help. With the AI industry booming at the time of this project's creation, it is now much easier to find your own AI female companion than it is to find a real one.
 
 Check out the site here: https://mizuumi-bot-frontend-jpvvkrmce-sajid2001.vercel.app/signin
 
